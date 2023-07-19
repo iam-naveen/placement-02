@@ -2,9 +2,9 @@
 #include <stdbool.h>
 
 int main() {
-    char subject[6][15] = { "Math", "English", "Science", "History", "Geography" };
+    char subject[6][15] = { "Tamil", "Math", "English", "Science", "History", "Geography" };
 
-    short subCount = sizeof(subject) / sizeof(subject[0]);
+    int subCount = sizeof(subject) / sizeof(subject[0]);
     int marks[subCount], totalMarks = 0; char name[20];
 
     printf("Enter your Name: ");

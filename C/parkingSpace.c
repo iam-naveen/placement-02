@@ -16,6 +16,7 @@ int main() {
     //     {0,0,0} -> sum: 0
     //     {1,1,1} -> sum: 3
     // }
+    // Finnaly find the row with maximum sum -> row 3
 
     int max = 0, maxIndex = 0;
 
