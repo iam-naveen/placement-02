@@ -1,6 +1,6 @@
 
-from vm_helper import *
-import os
+from vendingMachine_helper import *
+
 
 print("Welcome to the Vending Machine")
 print("============================================")
