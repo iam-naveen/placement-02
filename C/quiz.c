@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "data.c"
+#include "quiz_helpers.c"
 
 #include <stdio.h>
 

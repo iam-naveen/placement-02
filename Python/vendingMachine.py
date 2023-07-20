@@ -1,7 +1,7 @@
 
 from vendingMachine_helper import *
 
-
+print("\n\n============================================")
 print("Welcome to the Vending Machine")
 print("============================================")
 
@@ -24,7 +24,6 @@ while True:
     options = categories[choice-1].options
 
     while True:
-        # os.system("clear")
         print("\nPlease select an item from the following: ")
         print("============================================")
         for i, item in enumerate(options):
