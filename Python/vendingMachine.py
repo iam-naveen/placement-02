@@ -1,11 +1,11 @@
 
 from vm_helper import *
+import os
 
 print("Welcome to the Vending Machine")
 print("============================================")
 
 while True:
-
     print("\nPlease select a category from the following: ")
     print("============================================")
     for i, category in enumerate(categories):
@@ -24,6 +24,7 @@ while True:
     options = categories[choice-1].options
 
     while True:
+        # os.system("clear")
         print("\nPlease select an item from the following: ")
         print("============================================")
         for i, item in enumerate(options):
@@ -44,14 +45,17 @@ while True:
             bill = Bill(categories)
             bill.generateBill()
             print("============================================")
-            print(f"Your bill amount is {bill.total} + {bill.tax} (tax)")
+            print(
+                f"Your bill amount is {bill.total} + {round(bill.tax, 2)} (tax)")
             print("============================================")
-            c = input("Are you a student or faculty member?[y/n]: ")
+            c = input("\nAre you a student or faculty member?[y/n]: ")
             if c == "y":
-                bill.total -= bill.total * 0.1
+                bill.total -= (bill.total * 0.1)
+                bill.tax = bill.total * 0.05
                 print("============================================")
-                print("Ten percent discount applied")
-                print(f"Your bill amount is {bill.total} + {bill.tax} (tax)")
+                print("You are eligible for a 10% discount")
+                print(
+                    f"Your bill amount is {bill.total} + {round(bill.tax, 2)} (tax)")
                 print("============================================")
             print("Please select a payment option: ")
             print("1. Card")
