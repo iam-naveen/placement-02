@@ -1,12 +1,8 @@
 def calc(a, op, b):
-    if op == "+":
-        return a + b
-    elif op == "-":
-        return a - b
-    elif op == "*":
-        return a * b
-    elif op == "/":
-        return a / b
+    if op == "+": return a + b
+    elif op == "-": return a - b
+    elif op == "*": return a * b
+    elif op == "/": return a / b
 
 
 operations = {"+", "-", "*", "/"}
